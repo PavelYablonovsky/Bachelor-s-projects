@@ -1,0 +1,24 @@
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\bin\Release\Kepler tryhard.exe.config
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\bin\Release\Kepler tryhard.exe
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\bin\Release\Kepler tryhard.pdb
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\obj\Release\Kepler_tryhard.Form1.resources
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\obj\Release\Kepler_tryhard.Properties.Resources.resources
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.csproj.GenerateResource.Cache
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.csproj.CoreCompileInputs.cache
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.exe
+C:\Users\lone_\Desktop\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.pdb
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\bin\Release\Kepler tryhard.exe.config
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\bin\Release\Kepler tryhard.exe
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\bin\Release\Kepler tryhard.pdb
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.csprojResolveAssemblyReference.cache
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler_tryhard.Form1.resources
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler_tryhard.Properties.Resources.resources
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.csproj.GenerateResource.Cache
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.csproj.CoreCompileInputs.cache
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.exe
+C:\Users\Pavel_RUDN\Desktop\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.pdb
+C:\Users\Gamer\Desktop\Курсовая Павлика\Курсовая Павлика\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.csprojResolveAssemblyReference.cache
+C:\Users\Gamer\Desktop\Курсовая Павлика\Курсовая Павлика\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler_tryhard.Form1.resources
+C:\Users\Gamer\Desktop\Курсовая Павлика\Курсовая Павлика\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.csproj.GenerateResource.Cache
+C:\Users\Gamer\Desktop\Курсовая Павлика\Курсовая Павлика\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.exe
+C:\Users\Gamer\Desktop\Курсовая Павлика\Курсовая Павлика\Kepler tryhard\Kepler tryhard\Kepler tryhard\obj\Release\Kepler tryhard.pdb
