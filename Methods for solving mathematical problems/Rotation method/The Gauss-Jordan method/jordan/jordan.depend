@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1553437351 source:c:\users\gamer\desktop\Учеба\ФАЛЫ cb\jordan\main.cpp
+	<iostream>
+	<math.h>
+	<locale>
+	<cstdlib>
+	<ctime>
+	<time.h>
+	<stdio.h>
+
