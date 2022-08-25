@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1571423106 source:c:\users\gamer\desktop\Учеба\ФАЛЫ cb\lasrkurs\main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+	<fstream>
+
+1571428332 source:c:\users\gamer\desktop\Учеба\Теория космического полета\lasrkurs\main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+	<fstream>
+
+1575815055 source:c:\users\gamer\desktop\Учеба\Курсовые работы\lasrkurs\main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+	<fstream>
+

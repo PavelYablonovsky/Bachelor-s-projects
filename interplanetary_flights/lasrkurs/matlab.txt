@@ -1,0 +1,227 @@
+clc
+clear variables
+clear command window
+t12=220;
+H=110000;
+H2=15000;
+yearStart=2590000;
+yearEnd=3000000;
+T=365;
+
+format long;
+
+ae=149598000;
+a(1)=1*ae;
+a(2)=1.523691*ae;
+e(1)=0.01672;
+e(2)=0.09336;
+I(1)=0;
+I(2)=0.032;
+omega(1)=0;
+omega(2)=0.859;
+n(1)=0.017202;
+n(2)=0.009146;
+piE(1)=1.78374;
+piE(2)=5.81;
+l(1)=1.74338;
+l(2)=0.775;
+mu(1)=3.986*10^5;
+mu(2)=4.288*10^4;
+muSun=1.327*10^11;
+R(1)=0.925;
+R(2)=0.577;
+n_M(1)=sqrt(muSun)/a(1)^(3/2) ;
+n_M(2)=sqrt(muSun)/a(2)^(3/2);
+M0(1)=l(1)-piE(1);
+M0(2)=l(2)-piE(2);
+M(1)=(yearEnd-yearStart)*n_M(1);
+M(2)=(yearStart-yearEnd)*n_M(2);
+E0(1)=M(1);
+E0(2)=M(2);
+E(1)=M(1)+e(1)*sin(E0(2));
+E(2)=M(2)+e(2)*sin(E0(1));
+for i=1:3
+   E(1)=e(1)*sin(E(1))+M(1);
+   E(2)=e(2)*sin(E(2))+M(2);
+end
+
+for i=1:2
+   teta(i)=2*atan(sqrt((1+e(i))/1-e(i)))*tan(E(i)/2);
+   r(i)=(a(i)*(1-e(i)^2))/(1+e(i)*cos(teta(i)));
+   Vr(i)=sqrt(muSun/(a(i)*(1-e(i)^2)))*e(i)*sin(teta(i));
+   Vt(i)=sqrt(muSun/(a(i)*(1-e(i)^2)))*(1+e(i)*cos(teta(i)));
+   V(i)=sqrt(Vr(i)^2+Vt(i)^2);
+   x(i)=r(i)*cos(teta(i));
+   y(i)=r(i)*sin(teta(i));  
+   z(i)=0;
+   vx(i)=Vr(i)*cos(teta(i))-Vt(i)*sin(teta(i));
+   vy(i)=Vr(i)*sin(teta(i))+Vt(i)*cos(teta(i));
+   vz(i)=0;
+   w(i)=piE(i)-omega(i);
+   L1(i)=cos(w(i))*cos(omega(i))-sin(w(i))*sin(omega(i))*cos(I(i));
+   m1(i)=-sin(w(i))*cos(omega(i))-cos(w(i))*sin(omega(i))*cos(I(i));
+   n1(i)=sin(omega(i))*sin(I(i));
+   L2(i)=-cos(w(i))*sin(omega(i))+sin(w(i))*cos(omega(i))*cos(I(i));
+   m2(i)=-sin(w(i))*sin(omega(i))+cos(w(i))*cos(omega(i))*cos(I(i));
+   n2(i)=-cos(w(i))*sin(I(i));
+   L3(i)=sin(w(i))*sin(I(i));
+   m3(i)=cos(w(i))*sin(I(i));
+   n3(i)=cos(I(i));
+   X(i)=L1(i)*x(i)+m1(i)*y(i)+n1(i)*z(i);
+   Y(i)=L2(i)*x(i)+m2(i)*y(i)+n2(i)*z(i);
+   Z(i)=L3(i)*x(i)+m3(i)*y(i)+n3(i)*z(i);
+end
+
+cosi=abs(X(1)*Y(2)-X(2)*Y(1))/sqrt((Y(1)*Z(2)-Y(2)*Z(1))^2+(X(2)*Z(1)-X(1)*Z(2))^2+(X(1)*Y(2)-X(2)*Y(1))^2);
+syms itp
+syms omegatp
+syms fi1
+syms sigma
+syms tetaFinal1
+syms tetaFinal2
+syms eps
+syms E1
+syms E2
+syms uFinal
+syms uFinalEnd
+syms S
+eqn=cos(itp)==cosi;
+itp=solve(eqn,itp);
+itp2=acos(cosi);
+itp=double(itp(itp>0 & itp<pi/2));
+sinomega=(Y(1)*Z(2)-(Y(2)*Z(1))*sign(X(1)*Y(2)-X(2)*Y(1)))/(sin(itp)*sqrt((Y(1)*Z(2)-Y(2)*Z(1))^2+(X(2)*Z(1)-X(1)*Z(2))^2+(X(1)*Y(2)-X(2)*Y(1))^2));
+cosomega=(X(1)*Z(2)-X(2)*Z(1))*sign(X(1)*Y(2)-X(2)*Y(1))/(sin(itp)*sqrt((Y(1)*Z(2)-Y(2)*Z(1))^2+(X(2)*Z(1)-X(1)*Z(2))^2+(X(1)*Y(2)-X(2)*Y(1))^2));
+eqn2=sin(omegatp)==sinomega;
+omegatp=solve(eqn2,omegatp);
+omegatp=double(omegatp(omegatp>0 & omegatp<2*pi));
+cosfi=(X(1)*X(2)+Y(1)*Y(2)+Z(1)*Z(2))/(sqrt(X(1)^2+Y(1)^2+Z(1)^2)*sqrt(X(2)^2+Y(2)^2+Z(2)^2));
+sinfi=sqrt((Y(1)*Z(2)-Y(2)*Z(1))^2+(X(2)*Z(1)-X(1)*Z(2))^2+(X(1)*Y(2)-X(2)*Y(1))^2)/(sqrt(X(1)^2+Y(1)^2+Z(1)^2)*sqrt(X(2)^2+Y(2)^2+Z(2)^2))*sign(X(1)*Y(2)-X(2)*Y(1));
+s=sqrt((X(2)-X(1))^2+(Y(2)-Y(1))^2+(Z(2)-Z(1))^2);
+aT=(r(1)+r(2)+s)/4;
+eqn3=cos(fi1)==cosfi;
+fi1=solve(eqn3,fi1);
+%fi1=solve('cos(fi1)=-0.579211086785322',fi1)
+fi1=double(fi1(fi1<pi));
+if fi1>pi
+    trp=(r(1)+r(2)+s)^(3/2)/(8*sqrt(muSun))*(pi+(2*asin(sqrt((r(1)+r(2)+s)/(r(1)+r(2)+s)))-sin(2*asin(sqrt((r(1)+r(2)-s)/(r(1)+r(2)+s))))));
+else
+    trp=(r(1)+r(2)+s)^(3/2)/(8*sqrt(muSun))*(pi-(2*asin(sqrt((r(1)+r(2)+s)/(r(1)+r(2)+s)))-sin(2*asin(sqrt((r(1)+r(2)-s)/(r(1)+r(2)+s))))));
+end
+first=aT^(3/2)/sqrt(muSun);
+second=(2*asin(sqrt((r(1)+r(2)+s)/(4*aT)))-sin(2*asin(sqrt((r(1)+r(2)+s)/(4*aT)))));
+third=(2*asin(sqrt((r(1)+r(2)-s)/(4*aT)))-sin(2*asin(sqrt((r(1)+r(2)-s)/(4*aT)))));
+if fi1>pi
+    t12new=first*(2*pi+second+third);
+else
+    t12new=first*(2*pi-second+third);
+end
+aFinal=t12new;
+sinE2=sqrt((r(1)+r(2)+s)/(4*aT));
+sinSigma2=abs((r(1)+r(2)-s)/(4*aT));
+sinSigma2=sqrt(sinSigma2);
+eqn4=sin(eps/2)==sinE2;
+eps=solve(eqn4,eps);
+eps=double(eps);
+eqn5=sin(sigma/2)==sinSigma2;
+sigma=solve(eqn5,sigma);
+sigma=double(sigma(sigma<2*pi & sigma>3*pi/2));
+eFinal=sqrt(((2*aT-r(1)-r(2))/(2*aT*cos((eps-sigma)/2)))^2+((r(2)-r(1))/(2*aT*sin((eps-sigma)/2)))^2);
+cosE1E2=(2*aT-r(1)-r(2))/(2*aT*eFinal*cos((eps-sigma)/2));
+sinE1E2=(r(2)-r(1))/(2*aT*eFinal*sin((eps-sigma)/2));
+%eqns=[sin((E1+E2)/2)==(r(2)-r(1))/(2*aT*eFinal*sin((eps-sigma)/2)),cos((E1+E2)/2)==(2*aT-r(1)-r(2))/(2*aT*eFinal*cos((eps-sigma)/2)),E2-E1==eps-sigma]
+%=solve(eqns,[E1 E2])
+eqn6=sin((E1+E2)/2)==sinE1E2;
+eqn7=cos((E1+E2)/2)==cosE1E2;
+E1=solve(eqn6,E1);
+E2=solve(eqn7,E2);
+equatation=eps-sigma;
+EFinal(1)=2*pi;
+EFinal(2)=pi;
+for i=1:2
+   tanTeta(i)=sqrt((1+eFinal)/(1-eFinal))*tan(EFinal(i)/2);   
+end
+tet1=tanTeta(1);
+tet2=tanTeta(2);
+eqn8=tan(tetaFinal1/2)==tet1;
+eqn9=tan(tetaFinal2/2)==tet2;
+tetaFinal1=solve(eqn8,tetaFinal1);
+tetaFinal(1)=double(tetaFinal1);
+tetaFinal2=solve(eqn9,tetaFinal2);
+tetaFinal(2)=double(tetaFinal2);
+
+for i=1:2
+   cosu(i)=(X(i)*cos(omegatp)+Y(i)*sin(omegatp))/sqrt(X(i)^2+Y(i)^2+Z(i)^2);
+   sinu(i)=sqrt((Y(i)*cos(omegatp)-X(i)*sin(omegatp))^2+Z(i)^2)/sqrt(X(i)^2+Y(i)^2+Z(i)^2)*sign(Y(i)*cos(omegatp)-X(i)*sin(omegatp));
+end
+eqn10=cos(uFinal(1))==cosu(1);
+uFinal1=solve(eqn10,uFinal(1));
+uFinal1=double(uFinal1);
+eqn11=sin(uFinal(1))==sinu(1);
+uFinal2=solve(eqn11,uFinal(1));
+uFinal2=double(uFinal2);
+uFinal(1)=double(uFinal2(uFinal2>0 & uFinal2<2*pi));
+eqn12=cos(uFinalEnd(1))==cosu(2);
+uFinal11=solve(eqn12,uFinalEnd(1));
+uFinal11=double(uFinal11);
+eqn13=sin(uFinalEnd(1))==sinu(2);
+uFinal22=solve(eqn13,uFinalEnd(1));
+uFinal22=double(uFinal22);
+uFinal(2)=double(uFinal11(uFinal11>0 & uFinal11<2*pi));
+uFinal=double(uFinal);
+for i=1:2
+   wFinal(i)=uFinal(i)-tetaFinal(i); 
+end
+p=aT*(1-eFinal)^2;
+for i=1:2
+   Vrka(i)=double(sqrt(muSun/p)*eFinal*sin(tetaFinal(i)));
+   Vtka(i)=double(sqrt(muSun/p)*(1+eFinal*cos(tetaFinal(i))));
+   Vxka(i)=Vrka(i)*cos(tetaFinal(i))-Vtka(i)*sin(tetaFinal(i));
+   Vyka(i)=Vrka(i)*sin(tetaFinal(i))+Vtka(i)*cos(tetaFinal(i));
+   Vzka(i)=0;
+   L11(i)=cos(wFinal(i))*cos(omegatp)-sin(wFinal(i))*sin(omegatp)*cos(itp);
+   m11(i)=-sin(wFinal(i))*cos(omegatp)-cos(wFinal(i))*sin(omegatp)*cos(itp);
+   n11(i)=sin(omegatp)*sin(itp);
+   L22(i)=-cos(wFinal(i))*sin(omegatp)+sin(wFinal(i))*cos(omegatp)*cos(itp);
+   m22(i)=-sin(wFinal(i))*sin(omegatp)+cos(wFinal(i))*cos(omegatp)*cos(itp);
+   n22(i)=-cos(wFinal(i))*sin(itp);
+   L33(i)=sin(wFinal(i))*sin(itp);
+   m33(i)=cos(wFinal(i))*sin(itp);
+   n33(i)=cos(itp);
+   Vxka2(i)=L11(i)*Vxka(i)+m11(i)*Vyka(i)+n11(i)*Vzka(i);
+   Vyka2(i)=L22(i)*Vxka(i)+m22(i)*Vyka(i)+n22(i)*Vzka(i);
+   Vzka2(i)=L33(i)*Vzka(i)+m33(i)*Vyka(i)+n33(i)*Vzka(i);
+   deltaVx(i)=double(Vxka2(i)-vx(i));
+   deltaVy(i)=double(Vyka2(i)-vy(i));
+   deltaVz(i)=double(Vzka2(i)-vz(i));
+   deltaV(i)=double(sqrt(deltaVx(i)^2+deltaVy(i)^2+deltaVz(i)^2));
+end
+wFinal=double(wFinal);
+tetaFinal=double(tetaFinal);
+eFinal=double(eFinal);
+Vxka2=double(Vxka2);
+Vyka2=double(Vyka2);
+Vzka2=double(Vzka2);
+rSphEarth=929000;
+rSphMars=578000;
+rEarth=6371;
+rMars=3389.5;
+rOics=H+rEarth;
+rOicp=H2+rMars;
+VsEarth=deltaV(1);
+VsMars=deltaV(2);
+deltaVics=sqrt(VsEarth^2-2*mu(1)/rSphEarth+2*mu(1)/rOics)-sqrt(mu(1)/rOics);
+deltaVicp=sqrt(VsMars^2-2*mu(2)/rSphMars+2*mu(2)/rOicp)-sqrt(mu(2)/rOicp);
+deltaVsum=deltaVics+deltaVicp;
+disp(['i траектории полета :', num2str(itp)])
+disp(['omega траектории полета :', num2str(omegatp)])
+disp(['fi траектории полета :', num2str(fi1)])
+disp(['a траектории полета :', num2str(aT)])
+disp(['e траектории полета :', num2str(eFinal)])
+disp(['w траектории полета :', num2str(wFinal)])
+disp(['teta траектории полета :', num2str(tetaFinal)])
+disp(['Vx космического аппарата :', num2str(abs(Vxka2))])
+disp(['Vy космического аппарата :', num2str(abs(Vyka2))])
+disp(['Vz космического аппарата :', num2str(abs(Vzka2))])
+disp(['deltaVисз космического аппарата :', num2str(deltaVics)])
+disp(['deltaVисп космического аппарата :', num2str(deltaVicp)])
+disp(['deltaVсум космического аппарата :', num2str(deltaVsum)])
