@@ -1,0 +1,51 @@
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Release\Flying.exe.config
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Release\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Release\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Release\ZedGraph.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Release\Flying.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Release\Flying.Form2.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Release\Flying.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Release\Flying.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Release\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Release\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Release\Flying.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Release\Flying.exe.config
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Release\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Release\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Release\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Release\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Release\ZedGraph.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Release\Flying.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Release\Flying.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Release\Flying.Form2.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Release\Flying.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Release\Flying.csproj.GenerateResource.Cache
+D:\Работа\новый отдел\Flying3\Flying\bin\Release\Flying.exe.config
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.exe
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.pdb
+D:\Работа\новый отдел\Flying3\Flying\bin\Release\Flying.exe
+D:\Работа\новый отдел\Flying3\Flying\bin\Release\Flying.pdb
+D:\Работа\новый отдел\Flying3\Flying\bin\Release\ZedGraph.dll
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.csprojResolveAssemblyReference.cache
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.Form1.resources
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.Form2.resources
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.Properties.Resources.resources
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.csproj.GenerateResource.Cache
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.All.resources
+D:\Работа\новый отдел\Flying3\Flying\obj\Release\Flying.Form3.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\bin\Release\Flying.exe.config
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.exe
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.pdb
+D:\Работа\новый отдел\Программы\Flying3\Flying\bin\Release\Flying.exe
+D:\Работа\новый отдел\Программы\Flying3\Flying\bin\Release\Flying.pdb
+D:\Работа\новый отдел\Программы\Flying3\Flying\bin\Release\ZedGraph.dll
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.csprojResolveAssemblyReference.cache
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.All.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.Form1.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.Form2.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.Form3.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.Properties.Resources.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.csproj.GenerateResource.Cache
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.Form4.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.Form5.resources
+D:\Работа\новый отдел\Программы\Flying3\Flying\obj\Release\Flying.Form6.resources

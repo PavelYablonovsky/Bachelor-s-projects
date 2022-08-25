@@ -1,0 +1,60 @@
+c:\users\admin\documents\visual studio 2012\Projects\Flying\Flying\bin\Debug\Flying.exe.config
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\bin\Debug\Flying.exe
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\bin\Debug\Flying.pdb
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\obj\Debug\Flying.csprojResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\obj\Debug\Flying.Form1.resources
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\obj\Debug\Flying.Properties.Resources.resources
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\obj\Debug\Flying.csproj.GenerateResource.Cache
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\obj\Debug\Flying.exe
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\obj\Debug\Flying.pdb
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\bin\Debug\ZedGraph.dll
+C:\Users\Admin\documents\visual studio 2012\Projects\Flying\Flying\obj\Debug\Flying.Form2.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Debug\Flying.exe.config
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Debug\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Debug\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Debug\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Debug\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\bin\Debug\ZedGraph.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Debug\Flying.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Debug\Flying.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Debug\Flying.Form2.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Debug\Flying.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying2\Flying\obj\Debug\Flying.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Debug\Flying.exe.config
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Debug\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Debug\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Debug\Flying.exe
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Debug\Flying.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\bin\Debug\ZedGraph.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Debug\Flying.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Debug\Flying.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Debug\Flying.Form2.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Debug\Flying.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\Flying3\Flying\obj\Debug\Flying.csproj.GenerateResource.Cache
+D:\Работа\новый отдел\Flying3\Flying\bin\Debug\Flying.exe.config
+D:\Работа\новый отдел\Flying3\Flying\obj\Debug\Flying.exe
+D:\Работа\новый отдел\Flying3\Flying\obj\Debug\Flying.pdb
+D:\Работа\новый отдел\Flying3\Flying\bin\Debug\Flying.exe
+D:\Работа\новый отдел\Flying3\Flying\bin\Debug\Flying.pdb
+D:\Работа\новый отдел\Flying3\Flying\bin\Debug\ZedGraph.dll
+D:\Работа\новый отдел\Flying3\Flying\obj\Debug\Flying.csprojResolveAssemblyReference.cache
+D:\Работа\новый отдел\Flying3\Flying\obj\Debug\Flying.Form1.resources
+D:\Работа\новый отдел\Flying3\Flying\obj\Debug\Flying.Form2.resources
+D:\Работа\новый отдел\Flying3\Flying\obj\Debug\Flying.Properties.Resources.resources
+D:\Работа\новый отдел\Flying3\Flying\obj\Debug\Flying.csproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.All.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.Form1.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.Form2.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.Form3.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.Form4.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.Form5.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.Form6.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\Flying.Properties.Resources.resources
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\bin\Debug\training.exe.config
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\bin\Debug\training.exe
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\bin\Debug\training.pdb
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\training.exe
+C:\Documents and Settings\Admin\Рабочий стол\Тренажер\Flying\obj\Debug\training.pdb
