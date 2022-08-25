@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1492972250 source:c:\users\lone_\desktop\Курсовая 2 семестр\Новая папка\foobar\exam.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"exam.h"
+
+1492968863 source:c:\users\lone_\desktop\Курсовая 2 семестр\Новая папка\foobar\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"exam.h"
+
+1492972215 c:\users\lone_\desktop\Курсовая 2 семестр\Новая папка\foobar\exam.h
+
+1493492348 source:c:\users\gamer\desktop\курсовая 2 семестр\курсовая 2 семестр\foobar\exam.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<algorithm>
+	<iterator>
+	"exam.h"
+
+1493051345 c:\users\gamer\desktop\курсовая 2 семестр\курсовая 2 семестр\foobar\exam.h
+
+1493492497 source:c:\users\gamer\desktop\курсовая 2 семестр\курсовая 2 семестр\foobar\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"exam.h"
+
+1493493583 source:c:\users\gamer\desktop\КОПИИЯ КУРСОВОЙ 2\foobar\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"exam.h"
+
+1493051345 c:\users\gamer\desktop\КОПИИЯ КУРСОВОЙ 2\foobar\exam.h
+
+1493493153 source:c:\users\gamer\desktop\КОПИИЯ КУРСОВОЙ 2\foobar\exam.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<algorithm>
+	<iterator>
+	"exam.h"
+
+1494268464 source:c:\users\gamer\desktop\КУРСОВАЯ 2 СЕМЕСТР\foobar\exam.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<algorithm>
+	<iterator>
+	"exam.h"
+
+1494262408 c:\users\gamer\desktop\КУРСОВАЯ 2 СЕМЕСТР\foobar\exam.h
+
+1494268471 source:c:\users\gamer\desktop\КУРСОВАЯ 2 СЕМЕСТР\foobar\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"exam.h"
+
