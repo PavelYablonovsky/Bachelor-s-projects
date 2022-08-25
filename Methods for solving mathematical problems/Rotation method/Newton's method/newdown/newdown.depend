@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1544525921 source:c:\users\saddestsmile\desktop\Задачки по программированию\newdown\main.cpp
+	<iostream>
+	<iomanip>
+	<math.h>
+	<stdio.h>
+
+1544527388 source:d:\newdown\main.cpp
+	<iostream>
+	<iomanip>
+	<math.h>
+	<stdio.h>
+
+1557834230 source:e:\newdown\main.cpp
+	<iostream>
+	<iomanip>
+	<math.h>
+	<stdio.h>
+	<fstream>
+
