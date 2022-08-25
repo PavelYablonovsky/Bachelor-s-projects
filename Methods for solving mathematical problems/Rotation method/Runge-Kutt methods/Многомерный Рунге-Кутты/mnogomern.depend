@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1557835788 source:c:\users\user\documents\Аудиозаписи\projects\mnogomern\main.cpp
+	<iostream>
+	<windows.h>
+	<locale.h>
+	<fstream>
+	<stdio.h>
+	<math.h>
+	<iomanip>
+
