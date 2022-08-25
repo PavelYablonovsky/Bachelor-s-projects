@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1526162214 source:c:\users\gamer\desktop\Курсовая4\codeblocks\С возм\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<fstream>
+
+1526162594 source:c:\users\pavel.ya\desktop\Курсовая4\codeblocks\Без возмущ\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<fstream>
+
+1526326950 source:c:\users\gamer\desktop\Курсовые работы\Курсовая4\codeblocks\fa\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<fstream>
+

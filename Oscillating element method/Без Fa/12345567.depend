@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1526162214 source:c:\users\pavel.ya\desktop\Курсовая4\codeblocks\С возмущ\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<fstream>
+
+1526329843 source:c:\users\gamer\desktop\Курсовые работы\Курсовая4\codeblocks\Без fa\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<fstream>
+

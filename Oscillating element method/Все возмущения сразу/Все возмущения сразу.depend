@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1536603570 source:c:\users\gamer\desktop\Курсовые работы\Курсовая4\codeblocks\Все возмущения сразу\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+	<fstream>
+
