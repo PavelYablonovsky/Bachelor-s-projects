@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1556000530 source:c:\users\user\documents\Аудиозаписи\projects\file2\main.cpp
+	<iostream>
+	<windows.h>
+	<locale.h>
+	<fstream>
+	<stdio.h>
+	<math.h>
+
+1556000532 source:f:\1\проект Лагранж\main.cpp
+	<iostream>
+	<windows.h>
+	<locale.h>
+	<fstream>
+	<stdio.h>
+	<math.h>
+
