@@ -1,0 +1,192 @@
+#include <iostream>
+#include <math.h>
+#include <locale>
+#include <cstdlib>
+#include <ctime>
+#include <stdio.h>
+using namespace std;
+
+void print(double *a, int n);
+void print_vector(double *x,int n);
+
+/*void eq (double *a, double *y, int n) {
+for (int i = 0; i < n; i++) {
+for (int j = 0; j < n; j++){
+//cout << a[i*n+j] << "*x" << j;
+if (j < n - 1) {
+//cout <<" + ";
+}
+}
+//cout <<" = " << y[i] << '\n';
+}
+return;
+}
+*/
+double *Gss (double *a, double *y, int n) {
+double *x, max;
+int k, index;
+const double eps = 0.00001;
+x = new double[n];
+k = 0;
+while (k < n) {
+max = fabs(a[k*n+k]);
+index = k;
+for (int i = k + 1; i < n; i++) {
+if (fabs(a[i*n+k]) > max) {
+max = fabs(a[i*n+k]);
+index = i;
+}
+}
+if (max < eps) {
+cout << "Решений нет тк есть нулевой столбец " ;
+cout << index << " матрицы A" << '\n';
+return 0;
+}
+for (int j = 0; j < n; j++) { //прямой ход
+double array = a[k*n+j];
+a[k*n+j] = a[index*n+j];
+a[index*n+j] = array;
+}
+double array = y[k];
+y[k] = y[index];
+y[index] = array;
+
+for (int i = k; i < n; i++) {
+double array = a[i*n+k];
+if (fabs(array) < eps) continue;
+for (int j = 0; j < n; j++) {
+a[i*n+j] = a[i*n+j] / array;
+}
+y[i] = y[i] / array;
+if (i == k) continue;
+for (int j = 0; j < n; j++)
+a[i*n+j] = a[i*n+j] - a[k*n+j];
+y[i] = y[i] - y[k];
+}
+k++;
+}
+for (k = n - 1; k >= 0; k--) { //обратный ход
+x[k] = y[k];
+for (int i = 0; i < k; i++)
+y[i] = y[i] - a[i*n+k] * x[k];
+}
+return x;
+}
+
+int main() {
+setlocale(LC_ALL, "Russian");
+
+double *a, *y, *x, *a2,t,*y2;
+int n,i,j;
+cout << "Какой размер матрицы?: ";
+cin >> n;
+a = new double[n*n];
+a2 = new double[n*n];
+y = new double[n];
+y2 = new double[n];
+double prov;
+double prov2;
+srand(time(NULL));
+for (i = 0; i < n; i++) {
+for (j = 0; j < n; j++) {
+//cout << "a[" << i << "][" << j << "]= ";
+a[i*n+j] = rand()%100 ;
+a2[i*n+j]=a[i*n+j];
+//cin>>a[i*n+j];
+}
+}
+
+print(a,n);
+
+for (i = 0; i < n; i++)
+{
+//cout << "y[" << i << "]= ";
+//y[i]= rand()%100; //вектор заполняется рандомно для первой проверки
+for (j=0,y[i]=0.;j<n;j++)
+{
+if (j%2)
+//ответ -1 или 1 для проверки правильности программы
+y[i]+=-1*a[i*n+j];
+else
+y[i]+=1*a[i*n+j];
+}
+y2[i]=y[i];
+// cout<<y[i]<<endl;
+}
+cout<<endl;
+
+
+
+t=clock();
+x = Gss(a, y, n);
+printf("Answer:\n");
+print_vector(y,n);
+
+printf("A saved:\n");
+print(a2,n);
+
+printf("b\2 saved:\n");
+print_vector(y2,n);
+
+
+cout<<".\n.\n.\n"<<"x["<<n-1<<"]="<<x[n-1]<<'\n';
+t=clock()-t;
+printf("Time is %lf seconds\n", t/CLOCKS_PER_SEC);
+
+cout<<"\nПроверка :"<<endl;
+
+for(i=0,prov2=0.;i<n;i++)
+{
+    for(j=0,prov=0.;j<n;j++)
+        prov+=a2[i*n+j]*y[j];
+    prov2+=(prov-y2[i])*(prov-y2[i]);
+}
+
+cout<<sqrt(prov2);
+
+
+return 0;
+}
+
+void print(double *a, int n)
+{
+int i,j;
+if(n>10){
+for (i = 0; i < 10; i++) {
+for (j = 0; j < 10; j++) {
+cout<<a[i*n+j]<<"\t";
+}
+cout<<". . .\t"<<a[i*n+(n-1)]<<"\t";
+cout<<"\n";
+}
+cout<<"\n";
+
+
+for(i=0;i<3;i++){for (j = 0; j < 10; j++){cout<<'.'<<'\t';} cout<<'\t'<<'.'<<'\n';} cout<<'\n';
+
+
+for (j = 0; j < 10; j++) {
+cout<<a[(n-1)*n+j]<<"\t";
+}
+cout<<". . .\t"<<a[(n-1)*n+(n-1)]<<"\t";
+}
+else{
+for (i = 0; i < n; i++) {
+for (j = 0; j < n; j++) {
+cout<<a[i*n+j]<<"\t";
+}
+cout<<"\n";
+}
+}
+//cout<<"\n";cout<<"\n";
+
+}
+
+void print_vector(double *x,int n)
+{
+int i;
+
+for (i = 0; i < (n>10? 10 : n); i++){
+cout << "x[" << i << "]=" << x[i] << '\n';}
+}
+

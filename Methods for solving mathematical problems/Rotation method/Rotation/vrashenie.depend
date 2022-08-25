@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1557833134 source:c:\users\user\desktop\vrashenie\main.cpp
+	<iostream>
+	<math.h>
+	<locale>
+	<cstdlib>
+	<ctime>
+	<stdio.h>
+
+1557833134 source:f:\vrashenie\main.cpp
+	<iostream>
+	<math.h>
+	<locale>
+	<cstdlib>
+	<ctime>
+	<stdio.h>
+
+1557833134 source:e:\vrashenie\main.cpp
+	<iostream>
+	<math.h>
+	<locale>
+	<cstdlib>
+	<ctime>
+	<stdio.h>
+
