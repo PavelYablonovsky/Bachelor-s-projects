@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1558440104 source:c:\users\2\desktop\monte carlo and trapezoid methods\monte carlo and trapezoid methods\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<fstream>
+
+1558440104 source:c:\users\2\desktop\monte carlo method\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<fstream>
+
+1558440106 source:g:\monte carlo method\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<fstream>
+
